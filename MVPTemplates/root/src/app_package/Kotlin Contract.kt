@@ -3,7 +3,7 @@ package ${packageName}
 import com.zhujia.apartment.base.contract.BaseContract
 
 /**
- * 类说明
+ * ${title}
  * @author joker
  * Email:lc@shandaichaoren.com or 812405389@qq.com
  * @version 

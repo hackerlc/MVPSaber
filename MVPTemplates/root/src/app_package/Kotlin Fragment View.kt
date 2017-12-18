@@ -8,13 +8,13 @@ import gear.yc.com.gearlibrary.utils.ProgressDialogUtil
 import gear.yc.com.gearlibrary.utils.ToastUtil
 
 /**
- * 类说明
+ * ${title}
  * @author joker
  * Email:lc@shandaichaoren.com or 812405389@qq.com
  * @version 
  */
 class ${name}Fragment:
-        BasePFragment<${name}Contract.Presenter<String>>(R.layout),
+        BasePFragment<${name}Contract.Presenter<${type}>>(${layout}),
         LivenessContract.View {
     override fun initUI() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.

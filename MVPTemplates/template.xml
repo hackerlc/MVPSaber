@@ -11,7 +11,31 @@
         type="string"
         constraints="class|unique|nonempty"
         default="CustomMVP"
-        help="The name of the module that requires Viper"/>
+        help="The name of the module that MVP"/>
+	
+	<parameter
+        id="type"
+        name="Module Data type"
+        type="string"
+        constraints="unique|nonempty"
+        default="String"
+        help="The type of the module data that MVP"/>
+		
+	<parameter
+        id="layout"
+        name="layout id"
+        type="string"
+        constraints="unique|nonempty"
+        default="R.layout"
+        help="The type of the module data that MVP"/>
+		
+	<parameter
+        id="title"
+        name="title"
+        type="string"
+        constraints=""
+        default="类说明"
+        help="The type of the module data that MVP"/>
 
     <parameter
           id="viewType"

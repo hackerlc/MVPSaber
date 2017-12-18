@@ -8,13 +8,13 @@ import gear.yc.com.gearlibrary.utils.ProgressDialogUtil
 import gear.yc.com.gearlibrary.utils.ToastUtil
 
 /**
- * 类说明
+ * ${title}
  * @author joker
  * Email:lc@shandaichaoren.com or 812405389@qq.com
  * @version
  */
 class ${name}Activity:
-        BasePActivity<${name}Contract.Presenter<String>>(R.layout),
+        BasePActivity<${name}Contract.Presenter<${type}>>(R.layout),
         ${name}Contract.View {
 		
     override fun initUI() {

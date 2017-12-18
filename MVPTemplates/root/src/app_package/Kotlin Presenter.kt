@@ -9,15 +9,15 @@ import com.zhujia.apartment.base.contract.presenter.PresenterDataWrapper
  * @version 2017/12/15
  */
 class ${name}Presenter(v: ${name}Contract.View):
-        PresenterDataWrapper<String,${name}Contract.View>(v),
-        ${name}Contract.Presenter<String> {
+        PresenterDataWrapper<${type},${name}Contract.View>(v),
+        ${name}Contract.Presenter<${type}> {
     override fun fetch() {
     }
 
     override fun refreshData() {
     }
 
-    override fun getData(): String {
+    override fun getData(): ${type} {
         return mData
     }
 
