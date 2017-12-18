@@ -22,12 +22,12 @@
         help="The type of the module data that MVP"/>
 		
 	<parameter
-        id="layout"
-        name="layout id"
+        id="layoutName"
+        name="Layout File Name"
         type="string"
-        constraints="unique|nonempty"
-        default="R.layout"
-        help="The type of the module data that MVP"/>
+        constraints="layout|unique|nonempty"
+        default="layout"
+        help="Name of the layout XML file." />	
 		
 	<parameter
         id="title"

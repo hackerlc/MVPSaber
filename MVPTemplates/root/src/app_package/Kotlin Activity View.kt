@@ -14,7 +14,7 @@ import gear.yc.com.gearlibrary.utils.ToastUtil
  * @version
  */
 class ${name}Activity:
-        BasePActivity<${name}Contract.Presenter<${type}>>(R.layout),
+        BasePActivity<${name}Contract.Presenter<${type}>>(R.layout.activity_${layoutName}),
         ${name}Contract.View {
 		
     override fun initUI() {

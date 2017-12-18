@@ -14,7 +14,7 @@ import gear.yc.com.gearlibrary.utils.ToastUtil
  * @version 
  */
 class ${name}Fragment:
-        BasePFragment<${name}Contract.Presenter<${type}>>(${layout}),
+        BasePFragment<${name}Contract.Presenter<${type}>>(R.layout.fragment_${layoutName}),
         LivenessContract.View {
     override fun initUI() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
