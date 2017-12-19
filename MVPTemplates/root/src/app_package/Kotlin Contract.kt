@@ -1,7 +1,5 @@
 package ${packageName}
 
-import com.zhujia.apartment.base.contract.BaseContract
-
 /**
  * ${title}
  * @author joker

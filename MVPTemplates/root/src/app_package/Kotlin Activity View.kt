@@ -2,8 +2,6 @@ package ${packageName}
 
 import android.view.View
 import com.trello.rxlifecycle2.LifecycleTransformer
-import com.zhujia.apartment.R
-import com.zhujia.apartment.base.activity.BasePActivity
 import gear.yc.com.gearlibrary.utils.ProgressDialogUtil
 import gear.yc.com.gearlibrary.utils.ToastUtil
 

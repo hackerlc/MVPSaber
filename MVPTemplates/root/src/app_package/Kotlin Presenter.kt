@@ -1,7 +1,5 @@
 package ${packageName}
 
-import com.zhujia.apartment.base.contract.presenter.PresenterDataWrapper
-
 /**
  * ${title}
  * @author joker
