@@ -20,5 +20,6 @@ class ${name}Presenter(v: ${name}Contract.View):
     }
 
     override fun close() {
+		mView.clear()
     }
 }

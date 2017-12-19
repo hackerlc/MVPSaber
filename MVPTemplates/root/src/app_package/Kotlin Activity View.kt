@@ -26,6 +26,11 @@ class ${name}Activity:
     override fun initData() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
+	
+	override fun onDestroy() {
+        super.onDestroy()
+        mPresenter.close()
+    }
 
     override fun onClick(v: View) {
         when(v.id){
@@ -39,6 +44,10 @@ class ${name}Activity:
 
     override fun showToast(str: String) {
         ToastUtil.getInstance().makeShortToast(this, str)
+    }
+	
+	override fun onError(error: Throwable) {
+
     }
 
     override fun onDialog(show: Boolean) {

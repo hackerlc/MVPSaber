@@ -27,6 +27,11 @@ class ${name}Fragment:
 
         }
     }
+	
+	override fun onDestroy() {
+        super.onDestroy()
+        mPresenter.close()
+    }
 
     override fun attachPresenter() {
         mPresenter = ${name}Presenter(this)
@@ -38,6 +43,10 @@ class ${name}Fragment:
 
     override fun showToast(str: String) {
         ToastUtil.getInstance().makeShortToast(context, str)
+    }
+	
+	override fun onError(error: Throwable) {
+
     }
 
     override fun onDialog(show: Boolean) {
