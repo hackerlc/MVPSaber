@@ -18,6 +18,11 @@ class ${name}Presenter(v: ${name}Contract.View):
     override fun getData(): ${type} {
         return mData
     }
+	
+	override fun errorData(error: Throwable) {
+        super.errorData(error)
+        mView.get()?.onError(error)
+    }
 
     override fun close() {
 		mView.clear()
