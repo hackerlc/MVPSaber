@@ -8,12 +8,17 @@ import gear.yc.com.gearlibrary.utils.ToastUtil
 /**
  * ${title}
  * @author joker
- * Email:lc@shandaichaoren.com or 812405389@qq.com
+ * Email:812405389@qq.com
  * @version 
  */
 class ${name}Fragment:
         BasePFragment<${name}Contract.Presenter<${type}>>(R.layout.fragment_${layoutName}),
         LivenessContract.View {
+		
+    override fun attachPresenter() {
+        mPresenter = ${name}Presenter(this)
+    }
+	
     override fun initUI() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
@@ -31,10 +36,6 @@ class ${name}Fragment:
 	override fun onDestroy() {
         super.onDestroy()
         mPresenter.close()
-    }
-
-    override fun attachPresenter() {
-        mPresenter = ${name}Presenter(this)
     }
 
     override fun updateUI() {

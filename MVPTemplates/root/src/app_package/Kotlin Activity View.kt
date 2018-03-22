@@ -8,19 +8,19 @@ import gear.yc.com.gearlibrary.utils.ToastUtil
 /**
  * ${title}
  * @author joker
- * Email:lc@shandaichaoren.com or 812405389@qq.com
+ * Email:812405389@qq.com
  * @version
  */
 class ${name}Activity:
         BasePActivity<${name}Contract.Presenter<${type}>>(R.layout.activity_${layoutName}),
         ${name}Contract.View {
 		
-    override fun initUI() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
     override fun attachPresenter() {
         mPresenter = ${name}Presenter(this)
+    }
+
+    override fun initUI() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun initData() {

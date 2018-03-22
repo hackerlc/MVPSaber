@@ -3,8 +3,8 @@ package ${packageName}
 /**
  * ${title}
  * @author joker
- * Email:lc@shandaichaoren.com or 812405389@qq.com
- * @version 2017/12/15
+ * Email:812405389@qq.com
+ * @version 
  */
 class ${name}Presenter(v: ${name}Contract.View):
         PresenterDataWrapper<${type},${name}Contract.View>(v),

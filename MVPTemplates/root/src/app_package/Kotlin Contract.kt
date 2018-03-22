@@ -3,7 +3,7 @@ package ${packageName}
 /**
  * ${title}
  * @author joker
- * Email:lc@shandaichaoren.com or 812405389@qq.com
+ * Email:812405389@qq.com
  * @version 
  */
 interface ${name}Contract {
