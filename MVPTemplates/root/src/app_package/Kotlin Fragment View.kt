@@ -13,7 +13,7 @@ import gear.yc.com.gearlibrary.utils.ToastUtil
  */
 class ${name}Fragment:
         BasePFragment<${name}Contract.Presenter<${type}>>(R.layout.fragment_${layoutName}),
-        LivenessContract.View {
+        ${name}Contract.View {
 		
     override fun attachPresenter() {
         mPresenter = ${name}Presenter(this)
