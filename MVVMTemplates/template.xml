@@ -1,0 +1,137 @@
+<template format="4"
+        revision="1"
+        name="Kotlin MVVM Template"
+        description="Creates new MVVM classes - Activity, Contract, Fragment and VM">
+
+    <category value="MVVM Module"/>
+
+    <parameter
+        id="moduleName"
+        name="Module Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="ModuleName"
+        help="Module Name of the Activity or Fragment"/>
+
+    <parameter
+        id="ifOtherPackage"
+        name="Package Name"
+        type="string"
+        constraints=""
+        default=""
+        help="是否把activity或者fragment放到制定目录中去,默认指定为当前目录"/>
+
+    <parameter
+        id="viewDataBinding"
+        name="layout ViewDataBinding"
+        type="string"
+        constraints="unique|nonempty"
+        default="ViewDataBinding"
+        help="The type of the ViewDataBinding that MVVM"/>
+		
+    <parameter
+        id="layoutName"
+        name="Layout File Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        default="model_root"
+        help="Name of the layout XML file." />	
+		
+    <parameter
+        id="desc"
+        name="desc"
+        type="string"
+        constraints=""
+        default="类说明"
+        help="desc:"/>
+
+    <parameter
+          id="viewType"
+          name="View Type"
+          type="enum"
+          default="fragment">
+          <option id="activity">Activity</option>
+          <option id="fragment">Fragment</option>
+          <option id="viewpageFragment">ViewPageFragment</option>
+          <option id="none">None</option>
+    </parameter>
+
+    <parameter
+          id="createRepository"
+          name="Create Repository "
+          type="enum"
+          default="none"
+          help="If Create Repository">
+          <option id="repository">CreateRepository</option>
+          <option id="none">None</option>
+    </parameter>
+
+    <parameter
+          id="createModel"
+          name="Create Model "
+          type="enum"
+          default="none"
+          help="If Create Model">
+          <option id="model">Model</option>
+          <option id="none">None</option>
+    </parameter>
+
+    <parameter
+          id="createManager"
+          name="Create Manager "
+          type="enum"
+          default="manager"
+          help="If Create Manager">
+          <option id="manager">Manager</option>
+          <option id="managerViewPage">ManagerViewPage</option>
+          <option id="none">None</option>
+    </parameter>
+
+    <parameter
+          id="createAction"
+          name="Create Action "
+          type="enum"
+          default="action"
+          help="If Create Action">
+          <option id="action">Action</option>
+          <option id="none">None</option>
+    </parameter>
+
+    <parameter
+          id="createState"
+          name="Create State "
+          type="enum"
+          default="state"
+          help="If Create State">
+          <option id="state">State</option>
+          <option id="none">None</option>
+    </parameter>
+
+    <parameter
+          id="createClick"
+          name="Create Click Port"
+          type="enum"
+          default="click"
+          help="If Create Click">
+          <option id="click">Click</option>
+          <option id="none">None</option>
+    </parameter>
+    
+    <parameter
+          id="createVo"
+          name="Create Vo"
+          type="enum"
+          default="none"
+          help="If Create Vo">
+          <option id="vo">Vo</option>
+          <option id="none">None</option>
+    </parameter>
+
+      <thumbs>
+          <thumb>template_thumb.png</thumb>
+      </thumbs>
+
+      <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
